@@ -103,6 +103,10 @@ main {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: 5px solid $secondary-color;
+    a:hover {
+      color: $secondary-color;
+      @include easeOut;
+    }
   }
 }
 
