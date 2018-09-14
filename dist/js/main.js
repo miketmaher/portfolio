@@ -1,4 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
+
+  //GA Tag
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'UA-125781517-1');
+  //END GA Tag
+
   const menuBtn = document.querySelector('.menu-btn');
   const menu = document.querySelector('.menu');
   const menuNav = document.querySelector('.menu-nav');
